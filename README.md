@@ -6,7 +6,8 @@ A Chrome extension for converting web content to clean, token-efficient Markdown
 
 **Copy web content for LLMs in the most token-efficient way possible.**
 
-When interacting with AI assistants like Gemini, ChatGPT or Claude, web content is often bloated with HTML, CSS, and unnecessary markup. This extension extracts exactly what you need and converts it to clean Markdown, reducing token usage and making conversations more efficient.
+When interacting with AI assistants like Gemini, ChatGPT or Claude, web content is often bloated with HTML, CSS, and unnecessary markup.
+This extension extracts exactly what you need and converts it to clean Markdown, reducing token usage and making conversations more efficient.
 
 ## Quick Start
 
@@ -30,3 +31,6 @@ When interacting with AI assistants like Gemini, ChatGPT or Claude, web content 
 | `↓` | Navigate to child element |
 | `Alt+Hover` | Smart container detection |
 
+# External Libs
+
+- Turndown: https://cdn.jsdelivr.net/npm/turndown/dist/turndown.js
