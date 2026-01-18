@@ -1,0 +1,18 @@
+.zap-hover {
+  outline: 2px solid #00aaff !important;
+  outline-offset: 2px !important;
+  background: rgba(0, 170, 255, 0.05) !important;
+}
+
+.zap-selected {
+  outline: 2px solid #ff6a00 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.2) !important;
+  background: rgba(255, 106, 0, 0.05) !important;
+}
+
+[data-zap-ignore="true"] {
+  outline: none !important;
+  pointer-events: auto !important;
+}
+

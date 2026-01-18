@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Web to Markdown - LLM Ready",
+  "version": "0.1.0",
+  "description": "Select and convert web content to clean, token-efficient Markdown for LLMs. Smart element picker with keyboard navigation.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Web to Markdown",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["turndown.js", "content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
